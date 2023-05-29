@@ -37,23 +37,196 @@
     <div class="content">
         <div class="part1">
             <h1>Why should you, as a designer, make accessibility part of your design process?</h1>
-            <p>Some text will go here</p>
+            
+            <p>Did you know that around <a href="https://www.census.gov/newsroom/facts-for-features/2021/disabilities-act.html#:~:text=41.1%20million%20or%2012.7%25,the%20United%20States%20in%202019.">12.7% of the US population</a> and <a href="https://www.who.int/news-room/fact-sheets/detail/disability-and-health#:~:text=An%20estimated%201.3%20billion%20people%20%E2%80%93%20or%2016%25%20of%20the%20global,experience%20a%20significant%20disability%20today.">16% of the global population</a> identifies with having a
+            disability? That's no small number! So, as a designer, why not make accessibility an integral part of your design
+            process? Not only does it open up your creations to a wider audience, but it also enhances the overall user experience
+            for everyone.<br><br>
+            
+            Think about it: when you create accessible designs, you're actually making the web a better place for everyone.
+            Accessibility improves usability, making websites more convenient and enjoyable to use, regardless of individual
+            abilities. "But wait," you might wonder, "Won't designing for accessibility limit my creativity?" Not at all! In fact, it's quite
+            the opposite. Accessibility guidelines and best practices act as helpful tools rather than stifling constraints. They
+            encourage you to find innovative solutions and think outside the box. Picture it as a colorful palette of possibilities,
+            allowing you to create enchanting experiences that captivate users from all walks of life.<br><br>
+            
+            "Wouldn't it costme a lot of time and effort to create accessible designs", you might also ask. Quite the opposite! Integrating accessibility into your design process doesn't have to cost you extra time. By considering
+            accessibility from the start, you naturally weave it into your design framework. It becomes an organic part of your
+            creative journey, rather than a separate and time-consuming task. And that's why I am introducing handing this respource to you; hoping that I can make it easier for you to incorporate accessibility in your design process. Think of this as your trusty companion, accompanying you
+            throughout the design process, and making sure you design useful, usable, and accessible interfaces. <br><br>
+            </p>
+            <p class="bold-text"><b>Not sold on accessibility yet? Check out those <a href="https://a11ymyths.com/">5 Accessibility Myths</a></b></p>
         </div>
     </div>
     <div class="content">
         <div class="part1">
-            <h1>Why should you, as a designer, make accessibility part of your design process?</h1>
-            <p>Some text will go here</p>
+            <h1>Now that we have established that it’s important to think about accessibility…</h1>
+            <p>Let's dive deeper into the different experiences that users have on the web, and what creating an accessible experience means.
+                Accessibility is not just about providing alternative text for images; it encompasses a multitude of considerations that ensure a truly inclusive web experience for everyone. <br><br>
+                When it comes to navigating the web, various accessibility issues come into play, catering to different needs and
+                abilities. Let's explore some of the key dimensions:
+            </p>
+            <ul>
+                <li class="part2-list"><a href="https://www.boia.org/blog/what-is-cognitive-accessibility#:~:text=The%20term%20%E2%80%9Ccognitive%20accessibility%22%20refers,affect%20how%20they%20process%20information." class="in-text-link">Cognitive Accessibility</a>: Designing with cognitive accessibility in mind involves organizing content logically, using clear language, and
+                providing helpful cues and signposts along the way.</il>
+
+                <li class="part2-list"><a href="https://accessibility.digital.gov/visual-design/getting-started/#:~:text=Accessibility%20for%20visual%20designers&text=People%20with%20different%20visual%20abilities,a%20website's%20information%20and%20functionality."
+                        class="in-text-link">Visual Accessibility</a>: Incorporating proper color contrast, descriptive image captions, scalable fonts, and adaptable layouts to ensure that
+                        your design resonates with everyone, no matter their visual abilities.</il>
+
+                <li class="part2-list"><a
+                        href="https://adasitecompliance.com/website-accessibility-for-deaf-and-hard-of-hearing/"
+                        class="in-text-link">Auditory Accessibility</a>: Catering to individuals who are deaf or hard of hearing. Including closed captions, transcripts, and alternative audio
+                        descriptions for multimedia elements lets every user embrace the full spectrum of your content.</il>
+
+                <li class="part2-list"><a href="https://webaim.org/articles/motor/"
+                        class="in-text-link">Motor Accessibility</a>: Addressing the needs of those with physical disabilities, ensuring they can navigate and interact
+                        with web interfaces comfortably. Designing with motor accessibility in mind involves providing keyboard navigation
+                        options, allowing sufficient time for interactions, and avoiding elements that rely solely on precise mouse movements.</il>
+
+                <li class="part2-list"><a href="https://bestwebsiteaccessibility.com/guides/web-accessibility-for-users-with-speech-disabilities/" class="in-text-link">Speech Accessibility</a>:
+                    Accommodating individuals with speech impairments, allowing them to engage with the web through alternative input methods.</il>
+            </ul>
+            <p>As a designer, it's important to center your designs around your user needs, weaving together cognitive, visual, auditory, motor, and speech elements. For example, what could... [To Be Continued]</p>
         </div>
     </div>
 
-    <div id="Accessibility-Checklist" class="content">
+    <div id="Accessibility-Checklist" class="content checklist">
         <div class="part1">
-            <h1>Checklist</h1>
-            <p>Some text will go here</p>
+            <h1>Accessible Design Checklist</h1>
+            <button class="accordion">Hierarchy of Information</button>
+            <div class="panel">
+                <p>It's important to organize the information on the page in a way that will make it easy for users to naviagte and understand, esepcially 
+                    users who utilize screen readers. Here is a video illustrating how it's like to navigate a webpage with a screen reader:</p>
+                </p>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KuVKQQMtRRI" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><input type="checkbox" id="item1"><label for="item1">Present content in a meaningful order</label></li>
+                    <p class="bullet-subtext"> Screen readers usually start by reading the <b class="bold">page's headings</b>, starting from the highest-level heading and moving down to lower-level headings (e.g., , etc.). Headings provide an outline of the content
+                                structure. Next, screen readers typically read the <b class="bold">links</b> on the page. <br><br>
+                                Screen readers then move on to reading <b class="bold">form controls</b>, such as input fields, checkboxes, radio
+                                buttons, and dropdown menus. After going through the structural elements, screen readers read the main
+                                content of the page, including <b class="bold">paragraphs, sentences, and individual text elements</b>.</p>
+                    <li><input type="checkbox" id="item2"><label for="item2">Communicate with developers what should be a headings vs. a paragraph</label></li>
+                    <div class="bullet-subtext"> 
+                        <p>In terms of code, developers can distinguish this hierarchy of information using what is called a tag:</p>
+                        <code>
+                            <p>For headings: <span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;h2&gt;</span>, ... up to <span class="tag">&lt;h6&gt;</span></p>
+                            <p>For paragraphs: <span class="tag">&lt;p&gt;</span></p>
+                        </code>
+                        <p>It's important to clearly communicate the roles that different bodies of text take on the page to ensure an accessible implementation. You can read more about <a href="https://www.nngroup.com/articles/ia-vs-navigation/">Information Hierarchy here</a>.</p>
+                    </div>
+                </ul>
+                <p><b class="bold">Protip:</b> Check <a href="resources.html">our Resources tab</a> for a toolkit on how to specify the information hierarchy in your deisgn handout.</p>
+            </div>
+
+            <button class="accordion">Color & Contrast</button>
+            <div class="panel">
+                <ul>
+                    <li><input type="checkbox" id="item1"><label for="item1">Don't communicate only with colors</label></li>
+                    <p class="bullet-subtext">Some text will go here</p>
+                    <li><input type="checkbox" id="item2"><label for="item2">Check if your colors are distinguishable</label></li>
+                </ul>
+            </div>
+            <button class="accordion">Typography</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            
+            <button class="accordion">Images</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Buttons</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Motions/Scrolling effects</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Modals and Alerts</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Links</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Forms</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Hover Effect</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Focus States</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <button class="accordion">Videos</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+
+            <button class="accordion">Audio</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+
+            <button class="accordion">Language</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
         </div>
     </div>
     
 
 </body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </html>
