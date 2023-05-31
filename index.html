@@ -87,7 +87,12 @@
                 <li class="part2-list"><a href="https://bestwebsiteaccessibility.com/guides/web-accessibility-for-users-with-speech-disabilities/" class="in-text-link">Speech Accessibility</a>:
                     Accommodating individuals with speech impairments, allowing them to engage with the web through alternative input methods.</il>
             </ul>
-            <p>As a designer, it's important to center your designs around your user needs, weaving together cognitive, visual, auditory, motor, and speech elements. For example, what could... [To Be Continued]</p>
+            <p>As a designer, it's important to center your designs around your user needs, weaving together different cognitive, visual, auditory, motor, and speech elements. Before we jump into what you should do, it's important to understand how different users can experience the same website in a very different way. For example, I used a tool called Toptal to see how users with achromatopsia (a type of color blindness) see Amazon's website.</p>
+            
+            <div class="emulator-wrapper">
+                <iframe allowfullscreen class="color-filter-emulator" src="https://www.toptal.com/designers/colorfilter?orig_uri=https://amazon.com&process_type=grey"></iframe>
+            </div>
+            <p class="paragraph-part">See how drastically different it can be? This is why guidleines like the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines</a> (WCAG) exist to enable developers and designers to create a just and accessible experience for all. I compiled all those different guidlines into a list that you, my fellow designer, can use to guide your deisgn process. Excited to see the great designs you create!</p>
         </div>
     </div>
 
@@ -106,38 +111,97 @@
                         allowfullscreen></iframe>
                 </div>
                 <ul>
-                    <li><input type="checkbox" id="item1"><label for="item1">Present content in a meaningful order</label></li>
-                    <p class="bullet-subtext"> Screen readers usually start by reading the <b class="bold">page's headings</b>, starting from the highest-level heading and moving down to lower-level headings (e.g., , etc.). Headings provide an outline of the content
-                                structure. Next, screen readers typically read the <b class="bold">links</b> on the page. <br><br>
-                                Screen readers then move on to reading <b class="bold">form controls</b>, such as input fields, checkboxes, radio
-                                buttons, and dropdown menus. After going through the structural elements, screen readers read the main
-                                content of the page, including <b class="bold">paragraphs, sentences, and individual text elements</b>.</p>
-                    <li><input type="checkbox" id="item2"><label for="item2">Communicate with developers what should be a headings vs. a paragraph</label></li>
-                    <div class="bullet-subtext"> 
+                    <li>
+                        <label class="check-container" for="item1"><input type="checkbox" id="item1">
+                        <span class="checkmark"></span>Present content in a meaningful order</label>
+                    </li>
+                    <p class="bullet-subtext">
+                        Screen readers usually start by reading the <b class="bold">page's headings</b>, starting from the highest-level
+                        heading and moving down to lower-level headings. Those different sections or "roles" are specified in code using what are called tags. For example, the headings that would be read first will have the following tag: <code>&lt;h1&gt;</code> and the second one will have: <code>&lt;h2&gt;</code>... and it goes on till 6. This becomes relevant for you as a designer when communicating your designs to developers<br><br>
+                        Headings provide an outline of the content structure. Next, screen readers typically read the <b
+                            class="bold">links</b> on the page. <br><br>
+                        Screen readers then move on to reading <b class="bold">form controls</b>, such as input fields, checkboxes,
+                        radio buttons, and dropdown menus. After going through the structural elements, screen readers read the main
+                        content of the page, including <b class="bold">paragraphs, sentences, and individual text elements</b>.
+                    </p>
+                    <li>
+                        <label class="check-container" for="item2"><input type="checkbox" id="item2">
+                        <span class="checkmark"></span>Communicate the information hierarchy with developers</label>
+                    </li>
+                    <div class="bullet-subtext">
                         <p>In terms of code, developers can distinguish this hierarchy of information using what is called a tag:</p>
                         <code>
                             <p>For headings: <span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;h2&gt;</span>, ... up to <span class="tag">&lt;h6&gt;</span></p>
                             <p>For paragraphs: <span class="tag">&lt;p&gt;</span></p>
                         </code>
-                        <p>It's important to clearly communicate the roles that different bodies of text take on the page to ensure an accessible implementation. You can read more about <a href="https://www.nngroup.com/articles/ia-vs-navigation/">Information Hierarchy here</a>.</p>
+                        <p>It's important to clearly communicate the roles that different bodies of text take on the page to ensure an
+                            accessible implementation. You can read more about <a
+                                href="https://www.nngroup.com/articles/ia-vs-navigation/">Information Hierarchy here</a>.</p>
                     </div>
                 </ul>
+
                 <p><b class="bold">Protip:</b> Check <a href="resources.html">our Resources tab</a> for a toolkit on how to specify the information hierarchy in your deisgn handout.</p>
             </div>
 
             <button class="accordion">Color & Contrast</button>
             <div class="panel">
                 <ul>
-                    <li><input type="checkbox" id="item1"><label for="item1">Don't communicate only with colors</label></li>
-                    <p class="bullet-subtext">Some text will go here</p>
-                    <li><input type="checkbox" id="item2"><label for="item2">Check if your colors are distinguishable</label></li>
-                </ul>
+                    <li>
+                        <label class="check-container" for="item3"><input type="checkbox" id="item3">
+                         <span class="checkmark"></span>Don't communicate only with colors</label>
+                    </li>
+                    <p class="bullet-subtext">This adds an additional barrier to users with low vision or other visual impairments. It's important for your designs to be pretty AND accessible for users to actually enjoy the experiences you provide<br>
+                    Complement your colors with other visual cues, such as icons, text, and shapes.
+                    </p>
+                    <figure class="image-wrapper">
+                        <img width="560" height="350" src="Assets/color-ex-1.png"
+                            alt="2 versions of the same login page showing how to complement colors with other cues">
+                        <figcaption class="subtext">(source: <a href="https://brand.wwu.edu/accessibility/guide/dont-use-color-alone-convey-information">Western Washington University</a>)</figcaption>
+                    </figure>
+                    <li>
+                        <label class="check-container" for="item4"><input type="checkbox" id="item4">
+                            <span class="checkmark"></span>Check if your colors are distinguishable</label>
+                    </li>
+                    <p class="bullet-subtext">Colors are a great way to show off your artistic sense until they're not. Some colors are hard to distinguish from each other, especially when they are on top of each other. My absolute best friends when it comes to checking if my colors are distinguishable are:<br>
+                    </p>
+                    <ul class="panel-list">
+                        <li><a href="https://www.aremycolorsaccessible.com/">Are my colors Accessible?</a></li>
+                        <li><a href="https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker">And this Figma A11y - Color Contrast Checker</a></li>
+                    </ul>
+                                    <p><b class="bold">Protip:</b> Check <a href="resources.html">our Resources tab</a> for a toolkit on how to specify the
+                                        information hierarchy in your deisgn handout.</p>
+
             </div>
             <button class="accordion">Typography</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item5"><input type="checkbox" id="item5">
+                            <span class="checkmark"></span>Choose a readable and legible font type </label>
+                    </li>
+                    <p class="bullet-subtext">Readable fonts are easy to read, while legible fonts are easy to distinguish from each other. Some popular accessible fonts are <i>Tahoma, Calibri, Helvetica, Arial, Verdana, and SF</i>.<br></p>
+                        <p><b>None of these seem to fit your design/brand?</b> You can learn more about what makes a font accessible <a href="https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography">here</a>.</p>
+                    <li>
+                        <label class="check-container" for="item6"><input type="checkbox" id="item6">
+                            <span class="checkmark"></span>Text is large enough to read</label>
+                    </li>
+                    <p class="bullet-subtext">The rule of thumb is to use at least an effective font size of 16px, but this might vary based on the typeface. No text should be below 12px. <br>
+                    </p>
+                     <p><b class="bold">Protip:</b> for a responsive web experience, your font size should be in relative terms (e.g. rem) instead of pixels. This makes teh font sioze scale relative to the screen size.</p>
+                    <code><span class="tag">16px = 1rem</span></code>
+                    <p>You can read more about this <a href="https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15">here</a>. Have all your font sizes in pixels already, use this <a href="https://nekocalc.com/px-to-rem-converter">conversion tool</a>.</p>
+
+                    <li>
+                        <label class="check-container" for="item7"><input type="checkbox" id="item7">
+                            <span class="checkmark"></span>Maintain a line height that allows for comfortable reading</label>
+                    </li>
+                    <p>Another good rule of thumb: set the line height to be at approximately 150% of the font size.</p>
+
+                    <li>
+                        <label class="check-container" for="item8"><input type="checkbox" id="item8">
+                            <span class="checkmark"></span>Check your the contrast of your text color against your background color</label>
+                    </li>
+                </ul>
             </div>
             
             <button class="accordion">Images</button>
