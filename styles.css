@@ -30,6 +30,9 @@ p {
 
 /* Navigation Bar */
 .nav-wrapper {
+    position: sticky;
+    z-index: 100;
+    top: 0;
     background-color: #711ADF;
     background-size: cover;
     width: 100%;

@@ -187,7 +187,7 @@
                     </li>
                     <p class="bullet-subtext">The rule of thumb is to use at least an effective font size of 16px, but this might vary based on the typeface. No text should be below 12px. <br>
                     </p>
-                     <p><b class="bold">Protip:</b> for a responsive web experience, your font size should be in relative terms (e.g. rem) instead of pixels. This makes teh font sioze scale relative to the screen size.</p>
+                     <p><b class="bold">Protip:</b> for a responsive web experience, your font size should be in relative terms (e.g. rem) instead of pixels. This makes the font sioze scale relative to the screen size.</p>
                     <code><span class="tag">16px = 1rem</span></code>
                     <p>You can read more about this <a href="https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15">here</a>. Have all your font sizes in pixels already, use this <a href="https://nekocalc.com/px-to-rem-converter">conversion tool</a>.</p>
 
@@ -206,72 +206,163 @@
             
             <button class="accordion">Images</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item9"><input type="checkbox" id="item9">
+                            <span class="checkmark"></span>Provide image descriptions</label>
+                    </li>
+                    <p class="bullet-subtext">Providing alt text enables users with visual impairment to be able to perceieve and enagage with the visual content on your site. The text alternative should be at least a short description conveying the essential information presented by the image <br>
+                    Once provided, the alt text can be associated with the image using the "alt" property. Here is an example:</p>
+                    <code><span class="tag">&lt;img src="image.jpg" alt="description of image"&gt;</span></code><br>
+                    <li>
+                        <label class="check-container" for="item10"><input type="checkbox" id="item10">
+                            <span class="checkmark"></span>Do not use images of text</label>
+                    </li>
+                    <p class="bullet-subtext">Instead, use "real" text and <a href="https://www.w3.org/WAI/tutorials/images/textual/">use CSS</a> to visually style it to achieve dynamic visual designs.</p>
+                    <li>
+                        <label class="check-container" for="item11"><input type="checkbox" id="item11">
+                            <span class="checkmark"></span>Add captions to figures</label>
+                    </li>
+                    <p class="bullet-subtext">For complex figures like graphs, captions are important to provide the context needed to understand the content. Here is an example of how this can be translated to code:</p>
+                    <code>
+                        <span class="tag">&lt;figure&gt;</span> <br>
+                        <span class="tag">&lt;img src="image.jpg" alt="description of image"&gt;</span> <br>
+                        <span class="tag">&lt;figcaption&gt;</span><br>
+                        <span class="tag">Caption describing the image</span><br>
+                        <span class="tag">&lt;/figcaption&gt;</span><br>
+                        <span class="tag">&lt;/figure&gt;</span>
+                    </code>
+                    <p><b class="bold">Protip:</b> Want to learn more about image accessibility? Check out <a href="https://www.w3.org/WAI/tutorials/images/">WCAG's image tutorial</a> for a more in-depth guide.</p>
+                </ul>
             </div>
             <button class="accordion">Buttons</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <button class="accordion">Motions/Scrolling effects</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item12"><input type="checkbox" id="item12">
+                            <span class="checkmark"></span>Provide buttons with a large target size</label>
+                    </li>
+                    <p class="bullet-subtext">
+                        It's recommended a target size of at least 44 x 44 pixels to ensure that it's easy to interact with, especially for
+                        users with physical disabilities.</p>
+
+                    <p><b class="bold">Protip:</b> You can test the sizes of your buttons across different multiple devices on Figma and
+                        Sketch using <a href="https://adee.co/">Adee</a></p>
+
+                    <li>
+                        <label class="check-container" for="item13"><input type="checkbox" id="item13">
+                            <span class="checkmark"></span>Design Accessible Hover and Focus States</label>
+                    </li>
+                    <p class="bullet-subtext">How is the button going to behave when the user hovers over it? How is it going to behave when it's disabled?<br>
+                    It's important to think about how to indicate those states to show the users when they are interacting with the button. Those states can be translated to code through properties like <code><span>:focus, :hover, :active</span></code></p>
+
+                    <figure class="image-wrapper">
+                        <img class="states-img" src="Assets/states.png" width="560" height="350" alt="button states">
+                        <figcaption class="subtext">(source: <a
+                                href="https://www.accessguide.io/guide/focus-indicator">Access Guide</a>)</figcaption>
+                    </figure>
+
+                    
+                    
+                    <p><b class="bold">Protip:</b> Check out <a
+                            href="https://zellwk.com/blog/style-hover-focus-active-states/">this article</a> on styling for different states</p>
+
+                </ul>
+
             </div>
             <button class="accordion">Modals and Alerts</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item14"><input type="checkbox" id="item14">
+                            <span class="checkmark"></span>Do not allow scrolling inside the modal</label>
+                    </li>
+                    <p class="bullet-subtext">
+                        Modals/popups should be concise to make it easy for the users to digest and manipulate information.</p>
+                
+                    <li>
+                        <label class="check-container" for="item15"><input type="checkbox" id="item15">
+                            <span class="checkmark"></span>Have clear control and dismiss</label>
+                    </li>
+                    <p class="bullet-subtext">Users should be able to dismiss the modal through some sort of CTA, (Close/x), or by tapping away from the modal.</p>
+                
+                
+                
+                    <p><b class="bold">Protip:</b> Check out <a href="https://medium.com/@h_locke/how-can-we-make-modals-usable-and-accessible-f025fa0c459e">this
+                            article</a> on accessible modals</p>
+                
+                </ul>
             </div>
             <button class="accordion">Links</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <p>Here is an example of how to add an in-text link:</p>
+                <code><span class="tag">&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</span></code><br>
+                <p>The "a" tag is used for creating links, just like what the heading tags we discussed earlier are used to create different heading effects. The actual link goes into the "href" attribute of the tag, while the text you want to be displayed is between the two tag arrows.</p>
+                <p>The code above renders on the screen as following:</p>
+                <a href="https://www.google.com">Google</a>
+                </p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item14"><input type="checkbox" id="item14">
+                            <span class="checkmark"></span>Use meaningful text to describe links</label>
+                    </li>
+                    <p class="bullet-subtext">
+                        You want to properly set the user's expectations of where this link is going to take them by using meaningful and concise text, just like we used "Google" in the example.</p>
+                
+                    <li>
+                        <label class="check-container" for="item15"><input type="checkbox" id="item15">
+                            <span class="checkmark"></span>Provide clear visual indications for links</label>
+                    </li>
+                    <p class="bullet-subtext">The default browser settings makes links underlined and in a blue color. Those properties are adjustable through code, but make sure that you specify how you want to indicate links in your hand-off to developers.</p>
+
+                    <li>
+                        <label class="check-container" for="item16"><input type="checkbox" id="item16">
+                            <span class="checkmark"></span>Consider link transition</label>
+                    </li>
+                    <p class="bullet-subtext">What happens when I click the link? Does it open in a new tab or in the same tab? Does it open a modal? Those are properties that can be specified in code. Make sure you think about this interaction and specify it in your design.</p>
+                
+                
+                
+                    <p><b class="bold">Protip:</b> Check out <a
+                            href="https://www.nysed.gov/webaccess/create-accessible-hypertext-links">this
+                            article</a> on how to create accessible links</p>
+                
+                </ul>
             </div>
             <button class="accordion">Forms</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <button class="accordion">Hover Effect</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <button class="accordion">Focus States</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <button class="accordion">Videos</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item17"><input type="checkbox" id="item17">
+                            <span class="checkmark"></span>Divide long forms into smaller sections</label>
+                    </li>
+                    <p><b class="bold">Protip:</b> Use a progress bar to show the user where they are in the form and what they have left.</p>
+                
+                    <li>
+                        <label class="check-container" for="item18"><input type="checkbox" id="item18">
+                            <span class="checkmark"></span>Provide clear error messages</label>
+                    </li>
+                    <p><b class="bold">Protip:</b> Refer back to the <em>Color & Contrast</em> section to make sure that the error messages are visible and readable.</p>
+                </p>
+                    <p><b class="bold">Want to learn more about accessible forms?</b> Check out <a
+                            href="https://www.a11yproject.com/posts/how-to-write-accessible-forms/">the A11y project article</a> on accessible forms.</p>
+                
+                </ul>
             </div>
 
-            <button class="accordion">Audio</button>
+            <button class="accordion">Audio & Video Content</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <ul>
+                    <li>
+                        <label class="check-container" for="item19"><input type="checkbox" id="item19">
+                            <span class="checkmark"></span>Provide captions/subtitles</label>
+                            <p><b class="bold">Protip:</b> Check out <a href="https://zellwk.com/blog/style-hover-focus-active-states/">WCAG's guidelines</a> for how to create accessible audio and video content.</p>
+                    </li>
+
+                
+                </ul>
             </div>
 
-            <button class="accordion">Language</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
         </div>
     </div>
     
